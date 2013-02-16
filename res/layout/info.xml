@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/layout_root"
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:padding="10dp"
+            >
+        <ImageView android:id="@+id/image"
+                   android:layout_width="55dp"
+                   android:layout_height="80dp"
+                   android:layout_marginRight="20dp"
+                   android:background="@drawable/chinchetahome"
+                />
+        <TextView android:id="@+id/InfoAplicacion"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_toRightOf="@id/image"
+                  android:text="@string/InfoAplicacion"
+                  android:textStyle="bold"
+                  android:textSize="25dp"
+                  android:textColor="@color/white"
+                />
+        <TextView android:id="@+id/InfoNombre"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_toRightOf="@id/image"
+                  android:layout_below="@id/InfoAplicacion"
+                  android:text="@string/InfoNombre"
+                  android:textColor="@color/white"
+                />
+
+        <TextView android:id="@+id/InfoDescrip"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_toRightOf="@id/image"
+                  android:layout_below="@id/InfoNombre"
+                  android:text="@string/InfoMail"
+                  android:textColor="@color/white"
+                />
+    </RelativeLayout>
+
+</LinearLayout>

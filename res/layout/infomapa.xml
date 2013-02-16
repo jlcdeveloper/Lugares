@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+        android:id="@+id/layout_root">
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                 android:layout_width="fill_parent"
+                 android:layout_height="fill_parent"
+                 android:stretchColumns="*">
+        <TableRow>
+            <RelativeLayout android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:padding="10dp"
+                    >
+                <ImageView android:id="@+id/cambiavista"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_marginRight="20dp"
+                           android:background="@drawable/ic_verfichamapa"
+                        />
+                <TextView android:id="@+id/titcambiavista"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_toRightOf="@id/cambiavista"
+                          android:text="@string/titcambiavista"
+                          android:textStyle="bold"
+                          android:textSize="20dp"
+                          android:textColor="@color/white"
+                        />
+                <TextView android:id="@+id/descambiavista"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_toRightOf="@id/cambiavista"
+                          android:layout_below="@id/titcambiavista"
+                          android:text="@string/descambiavista"
+                          android:textColor="@color/white"
+                        />
+            </RelativeLayout>
+        </TableRow>
+        <TableRow>
+            <RelativeLayout android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:padding="10dp"
+                    >
+                <ImageView android:id="@+id/centramapa"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_marginRight="20dp"
+                           android:background="@drawable/ic_menu_mylocation"
+                        />
+                <TextView android:id="@+id/titcentramapa"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_toRightOf="@id/centramapa"
+                          android:text="@string/titcentramapa"
+                          android:textStyle="bold"
+                          android:textSize="20dp"
+                          android:textColor="@color/white"
+                        />
+                <TextView android:id="@+id/descentramapa"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_toRightOf="@id/centramapa"
+                          android:layout_below="@id/titcentramapa"
+                          android:text="@string/descentramapa"
+                          android:textColor="@color/white"
+                        />
+            </RelativeLayout>
+        </TableRow>
+        <TableRow>
+            <RelativeLayout android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:padding="10dp"
+                    >
+                <ImageView android:id="@+id/busqueda"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_marginRight="20dp"
+                           android:background="@drawable/ic_menu_search"
+                        />
+                <TextView android:id="@+id/titbusqueda"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_toRightOf="@id/busqueda"
+                          android:text="@string/titbusqueda"
+                          android:textStyle="bold"
+                          android:textSize="20dp"
+                          android:textColor="@color/white"
+                        />
+                <TextView android:id="@+id/desbusqueda"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_toRightOf="@id/busqueda"
+                          android:layout_below="@id/titbusqueda"
+                          android:text="@string/desbusqueda"
+                          android:textColor="@color/white"
+                        />
+            </RelativeLayout>
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

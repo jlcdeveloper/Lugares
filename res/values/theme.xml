@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="LugaresTheme" parent="@android:style/Theme.Light">
+        <item name="android:textColor">#000000</item>
+        <item name="android:buttonStyle">@style/BotonesHome</item>
+        <item name="android:listSeparatorTextViewStyle">@style/Botones</item>
+        <item name="android:windowTitleBackgroundStyle">@style/Titulo</item>
+        <item name="android:windowNoTitle">true</item>
+        <!--<item name="android:colorBackground">@style/fondo</item>-->
+        <!--<item name="android:windowBackground">@style/fondo</item>-->
+    </style>
+</resources>

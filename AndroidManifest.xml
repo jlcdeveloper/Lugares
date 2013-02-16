@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.jllobera.lugares"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="8" />
+
+    <application android:icon="@drawable/chinchetahomeico"
+                 android:label="@string/app_name"
+                 android:theme="@style/LugaresTheme" android:debuggable="true">
+
+        <!-- android:noHistory, Evita que se almacene la activity en la pila-->
+        <activity android:name=".activity.PrincipalActivity"
+                  android:label="@string/app_name" android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.ListaLugaresActivity" android:noHistory="true"/>
+        <activity android:name=".activity.EditarLugarActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.MapaLugaresActivity" android:noHistory="true"/>
+        <activity android:name=".activity.MostrarLugarActivity" android:screenOrientation="portrait"/>
+        <provider android:name=".db.LugaresProvider" android:authorities="com.jllobera.lugares.lugaresdb"/>
+        <uses-library android:name="com.google.android.maps"/>
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+</manifest>

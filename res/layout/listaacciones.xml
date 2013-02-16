@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:stretchColumns="*">
+    <TableRow>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    style="@style/FondoBotonesEdicion">
+
+        <ImageButton android:layout_height="wrap_content" android:layout_width="wrap_content"
+                     android:layout_centerHorizontal="true"
+                     android:background="@drawable/ic_abrirficha" android:id="@+id/BTAbrir">
+        </ImageButton>
+        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content"
+                  android:layout_below="@id/BTAbrir" android:layout_centerHorizontal="true"
+                  android:textColor="@color/white" android:text="@string/abrirficha"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    style="@style/FondoBotonesEdicion">
+
+        <ImageButton android:layout_height="wrap_content" android:layout_width="wrap_content"
+                     android:layout_centerHorizontal="true"
+                     android:id="@+id/BTEditar" android:background="@drawable/ic_editarficha"/>
+        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content"
+                  android:layout_below="@id/BTEditar" android:layout_centerHorizontal="true"
+                  android:textColor="@color/white" android:text="@string/editarficha"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    style="@style/FondoBotonesEdicion">
+        <ImageButton android:layout_height="wrap_content" android:layout_width="wrap_content"
+                     android:layout_centerHorizontal="true"
+                     android:id="@+id/BTVerMapa" android:background="@drawable/ic_verfichamapa"/>
+        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content"
+                  android:layout_below="@id/BTVerMapa" android:layout_centerHorizontal="true"
+                  android:textColor="@color/white" android:text="@string/verfichamapa"/>
+    </RelativeLayout>
+
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    style="@style/FondoBotonesEdicion">
+
+        <ImageButton android:layout_height="wrap_content" android:layout_width="wrap_content"
+                     android:layout_centerHorizontal="true"
+                     android:id="@+id/BTEliminar" android:background="@drawable/ic_eliminarficha"/>
+        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content"
+                  android:layout_below="@id/BTEliminar" android:layout_centerHorizontal="true"
+                  android:textColor="@color/white" android:text="@string/eliminaficha"/>
+
+    </RelativeLayout>
+
+    </TableRow>
+</TableLayout>

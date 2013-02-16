@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Comunes a toda la aplicación -->
+    <string name="app_name">Lugares</string>
+    <string name="ApiKey">0GC60NCMb2610oZbeglGqiTmKgIrA16bY1QbKGw</string>
+
+    <!-- Pantalla Principal (PrincipalActivity)-->
+    <string name="ListadoLugares">Listado de lugares</string>
+    <string name="MapaLugares">Mapa de lugares</string>
+
+    <!-- Mostrar y editar Lugares Activity -->
+    <string name="Descripcion">Descripción</string>
+    <string name="DescriptionHint">Escribe una descripción sobre el lugar...</string>
+    <string name="NombreHint">Nombre del lugar</string>
+    <string name="Guardar">Guardar</string>
+    <string name="Eliminar">Eliminar</string>
+    <string name="Crear">Crear</string>
+    <string name="Editar">Editar</string>
+    <string name="VerEnMapa">Ver el Mapa</string>
+    <string name="DetalleDireccion">Detalle Direccion</string>
+    <string name="Direccion">Direccion</string>
+    <string name="EliminarLugar">¿Seguro que quieres eliminarlo?</string>
+
+    <!-- Recursos -->
+    <color name="red">#CC0000</color>
+    <color name="green">#00AA00</color>
+    <color name="white">#FFFFFF</color>
+
+    <!-- Menu imagenes-->
+    <string name="AntesGuardar">Debes crear la ficha para poder cambiar la imagen</string>
+    <string name="Aceptar">Aceptar</string>
+    <string name="menutituloimg">Obtener imagen</string>
+    <string name="camara">desde la cámara</string>
+    <string name="galeria">desde el teléfono</string>
+
+     <!-- Activity Mapa -->
+    <string name="buscamapa">Buscar</string>
+
+
+    <!--Listado-->
+    <string name="abrirficha">Abrir</string>
+    <string name="editarficha">Editar</string>
+    <string name="verfichamapa">Ver Mapa</string>
+    <string name="eliminaficha">Eliminar</string>
+    <string name="ListaVacia">No hay elementos en la lista</string>
+
+    <string name="DeleteOK">El elemento se ha eliminado correctamente</string>
+    <string name="DeleteKO">Ha habido un problema a la hora de eliminar el elemento</string>
+
+
+    <!--Diálogos-->
+    <string name="salir">¿Estás seguro de que quieres salir?</string>
+    <string name="si">Sí</string>
+    <string name="no">No</string>
+
+
+    <!--Info-->
+
+    <string name="InfoAplicacion">Lugares</string>
+    <string name="InfoNombre">Joan Llobera</string>
+    <string name="InfoDescrip">DESCRIPCION</string>
+    <string name="InfoDescripText">Aplicación de gestión de lugares</string>
+    <string name="InfoMail">dracox1986@gmail.com</string>
+
+
+    <!--Info MostrarFicha-->
+    <string name="TituloInfoMostrar">Desplazarse entre fichas</string>
+
+    <!--Info EditarFicha-->
+    <string name="TituloInfoEditar">Cambiar la imagen</string>
+
+    <!--Info Mapa-->
+    <string name="TituloInfoMapa">Leyenda</string>
+    <string name="titcambiavista">Tipo de vista</string>
+    <string name="descambiavista">Cambia la vista del mapa</string>
+    <string name="titcentramapa">Centrar posición</string>
+    <string name="descentramapa">Centra la posición actual</string>
+    <string name="titbusqueda">Buscar</string>
+    <string name="desbusqueda">Busca en el mapa la dirección</string>
+
+
+    <!-- BD -->
+    <string name="guardadoOK">Se ha guardado el registro correctamente</string>
+    <string name="eliminadoOK">El elemento se ha eliminado correctamente</string>
+    <string name="eliminadoKO">Ha habido un problema a la hora de eliminar el elemento</string>
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras orci urna, dictum eget suscipit vitae, porta eu lorem. </string>
+</resources>
+

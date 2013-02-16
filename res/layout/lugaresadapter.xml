@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/fondogrupolista"
+        >
+    <ImageView android:id="@+id/idFoto"
+               android:layout_width="72dip"
+               android:layout_height="72dip"
+               android:src="@drawable/icolista"
+               android:padding="5dip"
+            />
+    <TextView android:id="@+id/idNombre"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="texto 2"
+              android:paddingTop="5dip"
+              android:textStyle="bold"
+              android:layout_toRightOf="@id/idFoto"
+              android:textColor="@color/white"
+            />
+    <TextView android:id="@+id/idDireccion"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="texto 3"
+              android:layout_toRightOf="@id/idFoto"
+              android:layout_below="@id/idNombre"
+              android:textColor="@color/white"
+            />
+    <TextView android:id="@+id/idDescripcionDir"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="texto 3"
+                  android:layout_toRightOf="@id/idFoto"
+                  android:layout_below="@id/idDireccion"
+                  android:textColor="@color/white"
+                />
+    <ViewStub android:id="@+id/VSDetalle"
+              android:inflatedId="@+id/VSIDetalle"
+              android:layout="@layout/listaacciones"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_below="@id/idDescripcionDir"
+              android:layout_toRightOf="@id/idFoto"
+
+            />
+
+</RelativeLayout> 

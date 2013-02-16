@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+android:id="@+id/widget28"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:background="@drawable/fondo"
+xmlns:android="http://schemas.android.com/apk/res/android"
+>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent" android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:fadingEdge="vertical|horizontal">
+
+    <EditText android:id="@+id/ETNombre"
+              android:maxLines="2"
+              android:hint="@string/NombreHint"
+              android:textSize="24dp"
+              android:layout_height="wrap_content"
+              android:layout_width="fill_parent"
+              android:layout_alignParentTop="true"
+              android:layout_centerHorizontal="true"
+              android:layout_marginTop="27dp"
+              android:layout_marginLeft="40dp"
+              android:layout_marginRight="40dp"
+              android:gravity="center_horizontal"
+              android:inputType="textMultiLine"
+              android:textColor="@color/white"
+              android:padding="3dp"
+              android:background="@drawable/textedit"/>
+
+
+    <RelativeLayout android:id="@+id/RLBotones" android:layout_width="fill_parent" android:layout_height="52dp">
+        <LinearLayout android:id="@+id/LLBotones" android:orientation="horizontal" android:gravity="bottom"
+                      android:layout_height="wrap_content" android:layout_width="match_parent"
+                      android:layout_alignParentBottom="true">
+            <LinearLayout android:layout_weight="1" android:layout_width="match_parent" android:id="@+id/LLBTGuardar"
+                          android:layout_height="wrap_content">
+
+                <Button android:id="@+id/BTGuardar" android:layout_height="wrap_content"
+                        android:layout_width="fill_parent" android:text="@string/Guardar"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center_horizontal|center_vertical"/>
+            </LinearLayout>
+            <LinearLayout android:layout_weight="1" android:layout_width="match_parent" android:id="@+id/LLBTEliminar"
+                          android:layout_height="wrap_content">
+
+
+                <Button android:text="@string/Eliminar" android:id="@+id/BTEliminar"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal|center_vertical"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:weightSum="1" android:layout_height="wrap_content" android:layout_width="fill_parent">
+        <RelativeLayout android:id="@+id/linearLayout3"
+                        android:layout_height="wrap_content" android:layout_width="fill_parent"
+                        android:gravity="center_horizontal" android:layout_margin="10dp">
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:id="@+id/TVDireccion" android:text="Direccion"
+                      style="@style/FuenteBlanca"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:id="@+id/TVDetalle" android:text="CP" android:layout_below="@id/TVDireccion"
+                      style="@style/FuenteBlanca"/>
+            <!--<TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:id="@+id/TVPoblacion" android:text="Población" android:layout_below="@id/TVCP"
+                      style="@style/FuenteBlanca"/>-->
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fondodescripcion"
+            android:layout_margin="10dp"
+            >
+        <ImageView android:id="@+id/IVFoto" android:src="@drawable/icolista"
+                   android:layout_height="110dp"
+                   android:layout_width="110dp"
+                   android:padding="10dp"
+                   android:adjustViewBounds="true"
+                   android:layout_alignParentLeft="true"/>
+
+        <EditText android:id="@+id/ETDescripcion"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:inputType="textMultiLine"
+                  android:minLines="4"
+                  android:layout_toRightOf="@id/IVFoto"
+                  android:hint="@string/DescriptionHint"
+                  android:gravity="top|left"
+                  android:textColor="@color/white"
+                  android:padding="7dp"
+                  android:background="@drawable/textedit"/>
+
+    </RelativeLayout>
+
+    <!--<FrameLayout android:id="@+id/FLMapa" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@layout/mapalugar"></FrameLayout>-->
+    <FrameLayout
+            android:id="@+id/FLMapa"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/borde"
+            >
+        <com.google.android.maps.MapView
+                android:id="@+id/FLMapView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:enabled="true"
+                android:clickable="true"
+                android:apiKey="@string/ApiKey"
+                />
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" android:orientation="vertical">
+
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>
+</ScrollView>

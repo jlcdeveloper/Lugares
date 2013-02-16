@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:paddingBottom="35dip"
+              android:paddingLeft="10dip"
+              android:minWidth="200dip"
+              android:id="@+id/balloon_main_layout"
+              android:background="@drawable/balloon_overlay_bg_selector"
+              android:paddingTop="0dip"
+              android:paddingRight="0dip">
+    <LinearLayout android:layout_height="wrap_content"
+                  android:layout_width="fill_parent"
+            >
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:paddingTop="10dip"
+                android:id="@+id/balloon_inner_layout">
+            <TextView android:layout_height="wrap_content"
+                      android:layout_width="fill_parent"
+                      android:id="@+id/balloon_item_title"
+                      android:text="balloon_item_title"
+                      android:textSize="16dip"
+                      android:textColor="#FF000000"/>
+            <TextView android:layout_height="wrap_content"
+                      android:layout_width="fill_parent"
+                      android:id="@+id/balloon_item_snippet"
+                      android:text="balloon_item_snippet"
+                      android:textSize="12dip"/>
+        </LinearLayout>
+        <LinearLayout android:layout_height="wrap_content"
+                      android:layout_width="wrap_content"
+                      >
+        <ImageView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/balloon_overlay_close"
+                   android:id="@+id/close_img_button"
+                   android:layout_gravity="right"
+                   android:paddingLeft="10dip"
+                   android:paddingBottom="10dip"
+                   android:paddingRight="8dip"
+                   android:paddingTop="8dip"></ImageView>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_height="wrap_content"
+                  android:layout_width="match_parent"
+                  android:gravity="fill_horizontal"
+                  android:layout_marginTop="10dip"
+
+            >
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:gravity="right">
+
+            <ImageButton android:layout_height="wrap_content" android:layout_width="wrap_content"
+                         android:background="@drawable/ic_abrirficha" android:id="@+id/BTAbrir">
+            </ImageButton>
+
+            <ImageButton android:layout_height="wrap_content" android:layout_width="wrap_content"
+                         android:id="@+id/BTEditar" android:background="@drawable/ic_editarficha"/>
+
+
+
+<!--
+            <ImageButton android:layout_height="wrap_content" android:layout_width="wrap_content"
+                         android:layout_centerHorizontal="true"
+                         android:id="@+id/BTVerMapa" android:background="@drawable/ic_verfichamapa"/>
+           -->
+
+            <ImageButton android:layout_height="wrap_content" android:layout_width="wrap_content"
+                         android:id="@+id/BTEliminar" android:background="@drawable/ic_eliminarficha"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

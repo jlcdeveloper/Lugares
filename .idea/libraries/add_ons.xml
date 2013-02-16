@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="add-ons">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../../adt-bundle-windows-x86_64/sdk/add-ons" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/../../adt-bundle-windows-x86_64/sdk/add-ons" recursive="false" />
+  </library>
+</component>

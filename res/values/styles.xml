@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Botones">
+        <item name="android:background">@drawable/boton</item>
+    </style>
+    <style name="BotonesHome">
+        <item name="android:background">@drawable/boton</item>
+    </style>
+    <style name="Titulo">
+        <item name="android:background">@drawable/titulo</item>
+    </style>
+    <style name="Lista">
+        <item name="android:listViewWhiteStyle">@drawable/fondo</item>
+    </style>
+
+    <style name="fondo">
+        <item name="android:windowBackground">@drawable/fondo</item>
+    </style>
+    <style name="ImpactFont">
+        <!--<item name="android:typeface">@assets</item>-->
+    </style>
+    <style name="FondoBotonesEdicion">
+        <item name="android:background">@drawable/fondogrupolista</item>
+    </style>
+    <style name="FuenteBlanca">
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+</resources>
